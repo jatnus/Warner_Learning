@@ -1,0 +1,13 @@
+name: Successfull on Push
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  echo_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print message
+        run: echo "✅ Code was pushed to main!"
