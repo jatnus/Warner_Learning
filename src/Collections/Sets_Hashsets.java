@@ -2,6 +2,7 @@ package Collections;
 
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
@@ -20,19 +21,25 @@ public class Sets_Hashsets {
       System.out.println(S);
        
 
-    //   Map<String,String> mp = new HashMap();
-    //   mp.put("Company_name", "WARNER BROS DISCOVERY");
-    //   mp.put("Employee_name", "Jatin Gupta");
-    //   mp.put("Employee_id", "jatin.gupta@wbd.com");
+      Map<String,String> mp = new HashMap();
+      mp.put("Company_name", "WARNER BROS DISCOVERY");
+      mp.put("Employee_name", "Jatin Gupta");
+      mp.put("Employee_id", "jatin.gupta@wbd.com");
 
-    // //   Set Sn= mp.entrySet();
-    //         // Set<Map.Entry<String, String>> Sn =mp.entrySet() ;
-    //         //   Set tn= mp.keySet();
+      Set Sn= mp.keySet();
+            // Set<Map.Entry<String, String>> Sn =mp.entrySet() ;
+            //   Set tn= mp.keySet();
                
-    //          for(String St : mp.keySet()){
+            //  for(String St : mp.keySet()){
                 
-    //          System.out.println(mp.get(St));
-    //          }
+            //  System.out.println(mp.get(St));
+            //  }
+
+
+            Iterator I=Sn.iterator();
+            while(I.hasNext()){
+                System.out.println(mp.get(I.next()));
+            }
 
     //             Map<Integer,String> mp = new HashMap();
     //   mp.put(1, "WARNER BROS DISCOVERY");

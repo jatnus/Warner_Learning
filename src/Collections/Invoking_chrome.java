@@ -9,7 +9,7 @@ public class Invoking_chrome {
         
        String s= "i love 'dreams' and 'passwords'";
        
-        String[] st=s.split("'");
+        String[] st=s.trim().split("'");
           System.out.println(st[0]);
  System.out.println(st[1]);
   System.out.println(st[2]);

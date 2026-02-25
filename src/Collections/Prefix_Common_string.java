@@ -5,7 +5,7 @@ public class Prefix_Common_string {
     public static void main(String[] args){
         // String[] Sr= {"flow","flew" ,"flower" };
       
-        String  strs[] = {"flower","flow","flight"};
+        String  strs[] = {"fower","flow","flight"};
        if (strs == null || strs.length == 0) {
         System.out.println("not valid array");
        }
